@@ -1,0 +1,41 @@
+$sides: (top, bottom, left, right);
+
+@mixin margin {    
+    @for $space from 0 through 100 { 
+        @each $side in $sides {
+            &-#{$side}-#{$space} {
+                margin-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}
+
+@mixin padding {    
+    @for $space from 0 through 100 { 
+        @each $side in $sides {
+            &-#{$side}-#{$space} {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}
+
+.margin{
+    @include margin;
+}
+
+.padding{
+    @include padding;
+}
+
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.block{
+    display: block;
+}

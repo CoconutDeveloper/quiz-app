@@ -6,48 +6,46 @@
 
     //dark-theme
     --darkest: #313E51;
-    --darker: #3B4D66;
-    --dark: #626C7F;
+    --navy: #3B4D66;
+    --grey-navy: #626C7F;
 
     //light-theme
     // note these names suck will change them later
-    --lightest: #FFFFFF;
+    --pure-white: #FFFFFF;
     --lighter: #F4F6FA;
-    --light: #ABC1E1;
+    --light-bluish: #ABC1E1;
 
     --color-background: var(--lighter);
-    --color-text: var(--darkest);
+    --main-text-color: var(--darkest);
+    --muted-text-color: var(--light-bluish);
+    --option-button-color: var(--pure-white);
     --bg-url: url(../assets/images/pattern-background-desktop-light.svg);
 }
 
 [data-theme='dark'] {
     --color-background: var(--darkest);
-    --color-text: var(--lightest);
+    --main-text-color: var(--pure-white);
+    --muted-text-color: var(--light-bluish);
+    --option-button-color: var(--navy);
     --bg-url: url(../assets/images/pattern-background-desktop-dark.svg);
-    span{
-        &.sub{
-            color: var(--dark);
-        }
-    }
+    
 }
 
 
 [data-theme='light'] {
-    --color-text: var(--darkest);
-    --color-background: var(--lightest);
+    --main-text-color: var(--darkest);
+    --color-background: var(--pure-white);
+    --muted-text-color: var(--grey-navy);
+    --option-button-color: var(--pure-white);
     --bg-url: url(../assets/images/pattern-background-desktop-light.svg);
-    span{
-        &.sub{
-            color: var(--light);
-        }
-    }
+    
 }
 
 body {
     background: var(--bg-url), var(--color-background);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: color 0.5s ease-in, background 0.5s ease-in;
+    transition: color 0.5s ease, background-color 0.5s ease, 0.5s ease;
     #container{
         
     }

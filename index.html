@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./js/script.js" defer></script>
-    <title>Frontend Mentor | Frontend quiz app</title>
-  </head>
-  <body data-theme='light'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+
+<body data-theme='light'>
 
   <div id="container">
     <header>
@@ -18,7 +20,7 @@
       <div class="theme-switcher-container">
         <div class="switch-sun"></div>
         <label class="switch">
-          <input type="checkbox" id="theme-switcher">
+          <input type="checkbox" id="theme-switcher" aria-label="Theme Switcher">
           <span class="slider round"></span>
         </label>
         <div class="switch-moon"></div>
@@ -26,14 +28,44 @@
     </header>
     <section id="content">
       <!-- Welcome Message -->
-      <div></div>
+      <div id="content-header">
+        <h1 class="light-font margin-bottom-16">Welcome to the <span class="medium-font">Frontend Quiz!</span></h1>
+        <span class="muted-text regular-font">Pick a subject to get started.</span>
+      </div>
       <!-- Subject Picker -->
-      <div></div>
+      <div id="subject-picker-component">
+          <div class="subject-picker-item" data-subject="html">
+            <div class="subject-picker-icon">
+              <img src="./assets/images/icon-html.svg" alt="HTML Icon" class="inline">
+            </div>
+            <span class="medium-font">HTML</span>
+          </div>
+          <div class="subject-picker-item" data-subject="css">
+            <div class="subject-picker-icon">
+              <img src="./assets/images/icon-css.svg" alt="CSS Icon" class="inline">
+            </div>
+            <span class="medium-font">CSS</span>
+          </div>
+          <div class="subject-picker-item" data-subject="Javascript">
+            <div class="subject-picker-icon">
+              <img src="./assets/images/icon-js.svg" alt="Javascript Icon" class="inline">
+            </div>
+            <span class="medium-font">Javascript</span>
+          </div>
+          <div class="subject-picker-item" data-subject="html">
+            <div class="subject-picker-icon">
+              <img src="./assets/images/icon-accessibility.svg" alt="Accessibility Icon" class="inline">
+            </div>
+            <span class="medium-font">Accessibility</span>
+          </div>
+
+      </div>
     </section>
   </div>
 
 
-  </body>
+</body>
+
 </html>
 
 
@@ -57,9 +89,9 @@
 
 <!-- Quiz menu end -->
 
-  <!-- Quiz question start -->
+<!-- Quiz question start -->
 
-  <!-- Question <number> of 10
+<!-- Question <number> of 10
 
   A
   B
@@ -68,13 +100,14 @@
 
   Submit answer -->
 
-  <!-- Quiz question end -->
+<!-- Quiz question end -->
 
-  <!-- Quiz completed start -->
+<!-- Quiz completed start -->
 
-  <!-- Quiz completed
+<!-- Quiz completed
   You scored... -->
 
-  <!-- score --> <!-- out of 10 -->
+<!-- score -->
+<!-- out of 10 -->
 
-  <!-- Quiz completed end -->
+<!-- Quiz completed end -->

@@ -29,52 +29,45 @@ body {
     font-family: "Rubik Regular";
     font-size: 1rem; // 16px
     line-height: 150%;
-    color: var(--color-text);
+    color: var(--main-text-color);
 }
 
-.display {
+.light-font{
+    color: var(--main-text-color);
+    font-family: 'Rubik Light';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 40px */
+}
+
+.light-italic-font{
+    font-family: "Rubik Light Italic";
+}
+
+.medium-font{
     font-family: "Rubik Medium";
-    font-size: 9rem; // 144px
-    line-height: 100%;
-    color: var(--color-text);
+    color: var(--main-text-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 40px */
 }
 
-.heading-large-bold {
-    font-family: "Rubik Medium";
-    font-size: 4rem; // 64px
-    line-height: 100%;
-    color: var(--color-text);
-}
-
-.heading-large-regular {
-    font-family: "Rubik Regular";
-    font-size: 3rem; // 48px
-    line-height: 100%;
-    color: var(--color-text);
-}
-
-.heading-medium {
-    font-family: "Rubik Medium";
-    font-size: 2.25rem; // 36px
-    line-height: 100%;
-    color: var(--color-text);
-}
-
-.heading-small {
-    font-family: "Rubik Medium";
-    font-size: 1.75rem; // 28px
-    line-height: 100%;
-    color: var(--color-text);
-}
-
-p,span,i,b,em,strong{
-    font-family: "Rubik Regular";
-    font-size: 0.75rem; // 12px
-    color: var(--color-text);
-}
-
-.italic{
+.regular-font{
+    font-family: 'Rubik Regular';
+    font-size: 14px;
     font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
 }
 
+.italic-font{
+    font-family: "Rubik Italic";
+}
 
+.muted-text{
+    color: var(--muted-text-color)
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
