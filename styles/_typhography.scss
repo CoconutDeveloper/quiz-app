@@ -1,0 +1,80 @@
+@import url(./_colors.scss);
+
+@font-face {
+    font-family: "Rubik Medium";
+    src: url("../assets/fonts/static/Rubik-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Rubik Regular";
+    src: url("../assets/fonts/static/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rubik Italic";
+    src: url("../assets/fonts/static/Rubik-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Rubik Light Italic";
+    src: url("../assets/fonts/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "Rubik Regular";
+    font-size: 1rem; // 16px
+    line-height: 150%;
+    color: var(--color-text);
+}
+
+.display {
+    font-family: "Rubik Medium";
+    font-size: 9rem; // 144px
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+.heading-large-bold {
+    font-family: "Rubik Medium";
+    font-size: 4rem; // 64px
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+.heading-large-regular {
+    font-family: "Rubik Regular";
+    font-size: 3rem; // 48px
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+.heading-medium {
+    font-family: "Rubik Medium";
+    font-size: 2.25rem; // 36px
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+.heading-small {
+    font-family: "Rubik Medium";
+    font-size: 1.75rem; // 28px
+    line-height: 100%;
+    color: var(--color-text);
+}
+
+p,span,i,b,em,strong{
+    font-family: "Rubik Regular";
+    font-size: 0.75rem; // 12px
+    color: var(--color-text);
+}
+
+.italic{
+    font-style: italic;
+}
+
+

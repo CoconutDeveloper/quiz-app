@@ -1,0 +1,80 @@
+// Main Colors
+:root{
+    --purple: #A729F5;
+    --error: #EE5454;
+    --success: #26D782;
+
+    //dark-theme
+    --darkest: #313E51;
+    --darker: #3B4D66;
+    --dark: #626C7F;
+
+    //light-theme
+    // note these names suck will change them later
+    --lightest: #FFFFFF;
+    --lighter: #F4F6FA;
+    --light: #ABC1E1;
+
+    --color-background: var(--lighter);
+    --color-text: var(--darkest);
+    --bg-url: url(../assets/images/pattern-background-desktop-light.svg);
+}
+
+[data-theme='dark'] {
+    --color-background: var(--darkest);
+    --color-text: var(--lightest);
+    --bg-url: url(../assets/images/pattern-background-desktop-dark.svg);
+    span{
+        &.sub{
+            color: var(--dark);
+        }
+    }
+}
+
+
+[data-theme='light'] {
+    --color-text: var(--darkest);
+    --color-background: var(--lightest);
+    --bg-url: url(../assets/images/pattern-background-desktop-light.svg);
+    span{
+        &.sub{
+            color: var(--light);
+        }
+    }
+}
+
+body {
+    background: var(--bg-url), var(--color-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: color 0.5s ease-in, background 0.5s ease-in;
+    #container{
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    [data-theme='light'] {
+        --bg-url: url(../assets/images/pattern-background-tablet-light.svg);
+        background-size: auto;
+    }
+
+    [data-theme='dark'] {
+        --bg-url: url(../assets/images/pattern-background-tablet-dark.svg);
+        background-size: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    [data-theme='light'] {
+        --bg-url: url(../assets/images/pattern-background-mobile-light.svg);
+        background-size: auto;
+    }
+
+    [data-theme='dark'] {
+        --bg-url: url(../assets/images/pattern-background-mobile-dark.svg);
+        background-size: auto;
+    }
+    
+}

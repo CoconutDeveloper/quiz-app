@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Frontend quiz app</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/script.js" defer></script>
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body data-theme='light'>
 
-  <!-- Quiz menu start -->
+  <div id="container">
+    <header>
+      <div class="header-content"></div>
+      <!-- theme switcher -->
+      <div class="theme-switcher-container">
+        <div class="switch-sun"></div>
+        <label class="switch">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="switch-moon"></div>
+      </div>
+    </header>
+    <section id="content">
+      <!-- Welcome Message -->
+      <div></div>
+      <!-- Subject Picker -->
+      <div></div>
+    </section>
+  </div>
 
+
+  </body>
+</html>
+
+
+
+<!-- 
+
+<p class="italic">
   Welcome to the Frontend Quiz!
   Pick a subject to get started.
+</p>
 
   HTML
   CSS
   JavaScript
   Accessibility
 
-  <!-- Quiz menu end -->
+  
+
+
+-->
+
+<!-- Quiz menu end -->
 
   <!-- Quiz question start -->
 
-  Question <!-- number --> of 10
+  <!-- Question <number> of 10
 
   A
   B
   C
   D
 
-  Submit answer
+  Submit answer -->
 
   <!-- Quiz question end -->
 
   <!-- Quiz completed start -->
 
-  Quiz completed
-  You scored...
+  <!-- Quiz completed
+  You scored... -->
 
-  <!-- score --> out of 10
+  <!-- score --> <!-- out of 10 -->
 
   <!-- Quiz completed end -->
-
-</body>
-</html>
